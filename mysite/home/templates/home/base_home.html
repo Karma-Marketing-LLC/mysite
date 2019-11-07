@@ -1,0 +1,25 @@
+<!-- templates/home/base_home.html -->
+<!-- homepage -->
+{% extends "base.html" %}
+
+{% load static %}
+{% block theme_style %}
+<link rel="stylesheet" href="static/home/themes/{{ theme.theme_name }}" type="text/css">
+{% endblock %}
+{% block title %}<title>Karma Home</title>{% endblock %}
+
+<!-- header -->
+{% block header %}
+<!-- click-able logo to home -->
+<div class="w3-row w3-blue" id="header">
+    <a href="">
+        <img src="static/home/karma_logo.png" alt="karma marketing" id="logo">
+    </a>
+</div>
+<!-- header buttons -->
+{% endblock %}
+
+<!-- main interaction area -->
+{% block main_window %}
+<div class="main_window"><img width="" alt="karma_background" src="{{ Theme.get_bg }}"></div>
+{% endblock %}

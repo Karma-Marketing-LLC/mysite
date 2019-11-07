@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="mul">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="a Marketing Medium">
+    <meta name="keywords" content="Marketing,">
+    <meta name="viewport" content="initial-scale=1,user-scalable=yes">
+    <link rel="stylesheet" href="{% static 'home/w3.css' %}" type="text/css">
+    {% block theme_style %}{% endblock %}
+    {% block title %}<title>Karma Marketing</title>{% endblock %}
+</head>
+<body background="">
+    {% block header %}
+    <header class="w3-row" id="header">
+        <div class="w3-container w3-section w3-right-align w3-mobile" id="login">
+            <button class="w3-button w3-orange w3-round-large w3-hover-shadow w3-hover-orange w3-bold" onclick="window.location.href = 'login/';"><b class="w3-text-white">Login</b></button>
+        </div>
+    </header>
+    {% endblock %}
+    {% block main_window %}
+    <p>Error Loading Main Window</p>
+    {% endblock %}
+<div class="w3-container w3-bottom" id="footer">Proudly Developed by Karma Marketing LLC.</div>
+</body>
+</html>
